@@ -1,0 +1,13 @@
+{
+  "Statement": [
+    {
+      "Action": [
+        "cloudtrail:DeleteTrail",
+        "cloudtrail:StopLogging"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ],
+  "Version": "2012-10-17"
+}

@@ -1,0 +1,120 @@
+{
+  "Statement": [
+    {
+      "Action": "ce:Get*",
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "readcostexplorer"
+    },
+    {
+      "Action": "support:*",
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "allowsupport"
+    },
+    {
+      "Action": [
+        "account:GetAccountInformation",
+        "account:GetAlternateContact",
+        "account:GetChallengeQuestions",
+        "account:GetContactInformation",
+        "account:GetRegionOptStatus",
+        "account:ListRegions",
+        "billing:GetBillingData",
+        "billing:GetBillingDetails",
+        "billing:GetBillingNotifications",
+        "billing:GetBillingPreferences",
+        "billing:GetContractInformation",
+        "billing:GetCredits",
+        "billing:GetIAMAccessPreference",
+        "billing:GetSellerOfRecord",
+        "billing:ListBillingViews",
+        "ce:DescribeCostCategoryDefinition",
+        "ce:DescribeNotificationSubscription",
+        "ce:DescribeReport",
+        "ce:GetAnomalies",
+        "ce:GetAnomalyMonitors",
+        "ce:GetAnomalySubscriptions",
+        "ce:GetCostAndUsage",
+        "ce:GetCostAndUsageWithResources",
+        "ce:GetCostCategories",
+        "ce:GetCostForecast",
+        "ce:GetDimensionValues",
+        "ce:GetPreferences",
+        "ce:GetReservationCoverage",
+        "ce:GetReservationPurchaseRecommendation",
+        "ce:GetReservationUtilization",
+        "ce:GetRightsizingRecommendation",
+        "ce:GetSavingsPlansCoverage",
+        "ce:GetSavingsPlansPurchaseRecommendation",
+        "ce:GetSavingsPlansUtilization",
+        "ce:GetSavingsPlansUtilizationDetails",
+        "ce:GetTags",
+        "ce:GetUsageForecast",
+        "ce:ListCostAllocationTags",
+        "ce:ListCostCategoryDefinitions",
+        "ce:ListSavingsPlansPurchaseRecommendationGeneration",
+        "ce:ListTagsForResource",
+        "consolidatedbilling:GetAccountBillingRole",
+        "consolidatedbilling:ListLinkedAccounts",
+        "cur:DescribeReportDefinitions",
+        "cur:GetClassicReport",
+        "cur:GetClassicReportPreferences",
+        "cur:GetUsageReport",
+        "cur:ValidateReportDestination",
+        "freetier:GetFreeTierAlertPreference",
+        "freetier:GetFreeTierUsage",
+        "invoicing:GetInvoiceEmailDeliveryPreferences",
+        "invoicing:GetInvoicePDF",
+        "invoicing:ListInvoiceSummaries",
+        "payments:GetPaymentInstrument",
+        "payments:GetPaymentStatus",
+        "payments:ListPaymentPreferences",
+        "purchase-orders:GetPurchaseOrder",
+        "purchase-orders:ListPurchaseOrderInvoices",
+        "purchase-orders:ListPurchaseOrders",
+        "sustainability:GetCarbonFootprintSummary",
+        "tax:GetExemptions",
+        "tax:GetTaxInheritance",
+        "tax:GetTaxInterview",
+        "tax:GetTaxRegistration",
+        "tax:GetTaxRegistrationDocument",
+        "tax:ListTaxRegistrations"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "viewbilling"
+    },
+    {
+      "Action": [
+        "trustedadvisor:Describe*",
+        "trustedadvisor:RefreshCheck"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "readrefreshtachecks"
+    },
+    {
+      "Action": [
+        "wellarchitected:GetWorkload",
+        "wellarchitected:ListWorkloads"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "readwellarchitechtectedframework"
+    },
+    {
+      "Action": "config:SelectResourceConfig",
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "readconfig"
+    },
+    {
+      "Action": "aws-marketplace:ViewSubscriptions",
+      "Effect": "Allow",
+      "Resource": "*",
+      "Sid": "readMarketplaceSubs"
+    }
+  ],
+  "Version": "2012-10-17"
+}

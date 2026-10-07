@@ -1,0 +1,13 @@
+{
+  "Statement": [
+    {
+      "Action": [
+        "ec2:ModifyReservedInstances",
+        "ec2:PurchaseReservedInstancesOffering"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ],
+  "Version": "2012-10-17"
+}

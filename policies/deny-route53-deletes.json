@@ -1,0 +1,15 @@
+{
+  "Statement": [
+    {
+      "Action": "route53:ChangeResourceRecordSets",
+      "Condition": {
+        "StringEquals": {
+          "route53:ChangeResourceRecordSetsActions": "DELETE"
+        }
+      },
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ],
+  "Version": "2012-10-17"
+}

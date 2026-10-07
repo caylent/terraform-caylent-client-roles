@@ -1,0 +1,10 @@
+{
+  "Statement": [
+    {
+      "Action": "sts:AssumeRoot",
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ],
+  "Version": "2012-10-17"
+}

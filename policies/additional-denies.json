@@ -1,0 +1,40 @@
+{
+  "Statement": [
+    {
+      "Action": [
+        "s3:GetObject",
+        "s3:GetObject*",
+        "s3:Create*",
+        "s3:Delete*",
+        "s3:ObjectOwnerOverrideToBucketOwner",
+        "s3:Put*",
+        "s3:Replicate*",
+        "s3:RestoreObject",
+        "ec2:CopyImage",
+        "ec2:CopySnapshot",
+        "ec2:CreateImage",
+        "ec2:CreateVolume",
+        "ec2:DeregisterImage",
+        "ec2:RegisterImage",
+        "ec2:ModifyImageAttribute",
+        "ec2:ReplaceIamInstanceProfileAssociation",
+        "ec2:ResetSnapshotAttribute",
+        "ec2:RunInstances",
+        "ec2:Attach*",
+        "ssm:*Parameter*",
+        "ssm:SendCommand",
+        "ssm:StartAutomationExecution",
+        "ssm:StartSession",
+        "rds:CopyDBClusterSnapshot",
+        "rds:CopyDBSnapshot",
+        "rds:ModifyDBSnapshotAttribute",
+        "rds:ModifyDBInstance",
+        "rds:ModifyDBCluster",
+        "rds:Restore*"
+      ],
+      "Effect": "Deny",
+      "Resource": "*"
+    }
+  ],
+  "Version": "2012-10-17"
+}

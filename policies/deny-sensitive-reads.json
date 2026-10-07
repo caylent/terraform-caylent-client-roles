@@ -1,0 +1,51 @@
+{
+  "Statement": [
+    {
+      "Action": [
+        "cloudfront-keyvaluestore:Get*",
+        "cloudfront-keyvaluestore:List*",
+        "codecommit:GetBlob",
+        "codecommit:GetDifferences",
+        "codecommit:GetFile",
+        "codecommit:GitPull",
+        "dax:BatchGetItem",
+        "dax:GetItem",
+        "dax:Query",
+        "dax:Scan",
+        "dynamodb:BatchGetItem",
+        "dynamodb:GetItem",
+        "dynamodb:GetRecords",
+        "dynamodb:GetShardIterator",
+        "dynamodb:Query",
+        "dynamodb:Scan",
+        "ecr:BatchGetImage",
+        "es:ESHttpGet",
+        "iot:GetThingShadow",
+        "kinesis:GetRecords",
+        "mediapackagev2:GetObject",
+        "mediastore:GetObject",
+        "omics:Get*",
+        "qldb:GetBlock",
+        "rds:Download*",
+        "rekognition:Detect*",
+        "rekognition:Get*",
+        "rekognition:Search*",
+        "s3-object-lambda:GetObject*",
+        "s3-outposts:GetObject*",
+        "s3:GetObject",
+        "s3:GetObject*",
+        "sagemaker:GetSearchSuggestions",
+        "sagemaker:Search",
+        "snowball:GetJobUnlockCode",
+        "sqs:ReceiveMessage",
+        "ssm-contacts:GetContactChannel",
+        "ssm-incidents:Get*",
+        "sts:GetSessionToken"
+      ],
+      "Effect": "Deny",
+      "Resource": "*",
+      "Sid": "denyvarious"
+    }
+  ],
+  "Version": "2012-10-17"
+}
